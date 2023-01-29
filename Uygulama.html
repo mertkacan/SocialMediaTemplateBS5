@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Template</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/lumen/bootstrap.min.css"><!--Boostwatch sitesinden bağlantıyı kopyalayıp Nava renk verdik. -->
+    <link rel="stylesheet" href="library/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark"> <!--Navbar-dark ve bg-dark diyerek nav bölümünü koyu yaptık.Fixed-top diyerek sayfanın üstünde sabit tuttuk. -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <i class="fa-solid fa-home"></i>ONLINE3OOK</a><!--Buraya i ile ev simgesi koyduk. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-2"><!--me-2 diyerek marjin verdik -->
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="fa-solid fa-earth-europe fa-lg d-none d-lg-inline"></i><!--d-none d-lg-inline=> Normalde gizle ama large ekranda göster demektir. -->
+                            <span class="d-lg-none ">Home</span>
+                        </a> <!--Buraya i ile Dünya simgesi koyduk.fa-lg ile simgeyi büyüttük.  -->
+                        <!--<span class="d-lg-none ">Home</span> kodu ile ekran genişliği küçüldüğünde yazıları tek satır yaptığımızda Home yazdırdık  -->
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-user fa-lg d-none d-lg-inline"></i>
+                            <span class="d-lg-none ">Account</span>
+                        </a><!--Buraya i ile user simgesi koyduk. fa-lg ile simgeyi büyüttük. -->
+                        <!--<span class="d-lg-none ">Home</span> kodu ile ekran genişliği küçüldüğünde yazıları tek satır yaptığımızda Account yazdırdık  -->
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-envelope fa-lg d-none d-lg-inline">
+                            </i><span class="d-lg-none ">Contact</span>
+                        </a><!--Buraya i ile Mail simgesi koyduk.fa-lg ile simgeyi büyüttük. -->
+                        <!--<span class="d-lg-none ">Home</span> kodu ile ekran genişliği küçüldüğünde yazıları tek satır yaptığımızda Contact yazdırdık  -->
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell fa-lg"></i><!--Buraya i ile çan simgesi koyduk.fa-lg ile simgeyi büyüttük. -->
+                            <span class="d-lg-none ">Notifications</span><!--d-none gizle demektir. large olunca gizle anlamına gelir-->
+                            <sup>
+                                <span class="badge rounded-pill text-bg-success">3</span>
+                            </sup>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">One New Friend Request</a></li>
+                            <li><a class="dropdown-item" href="#">John Doe posted on your wall</a></li>
+                            <li><a class="dropdown-item" href="#">Jane likes your post</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#">
+                            <img src="img/erkek1.jpg" class="rounded-circle d-none d-lg-inline" alt="profile photo" width="24" height="24">
+                            <span class="d-lg-none ">My Account</span>
+                        </a><!--Buraya i ile user simgesi koyduk. fa-lg ile simgeyi büyüttük. -->
+                        <!--<span class="d-lg-none ">Home</span> kodu ile ekran genişliği küçüldüğünde yazıları tek satır yaptığımızda Account yazdırdık  -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!--Nv kısmını bitirmiş olduk. Aşağıda div kısmına geçtik.-->
+    <main class="container mt-3">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="shadow p-3 rounded mb-4">
+                    <div class="h5 text-center">My Profile</div>
+                    <div class="text-center py-3 border-bottom">
+                        <img src="img/erkek1.jpg" class="rounded-circle" alt="My Profile" width="128" height="128">
+                    </div>
+                    <div>
+                        <div class="my-3">
+                            <i class="fa-solid fa-fw fa-pen me-2"></i>
+                            Designer, UI
+                        </div>
+                        <div class="my-3">
+                            <i class="fa-solid fa-fw fa-home me-2"></i>
+                            London, UK
+                        </div>
+                        <div class="my-3">
+                            <i class="fa-solid fa-fw fa-birthday-cake me-2"></i>
+                            April 1,1988
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow rounded mb-4">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-primary list-group-item-action">
+                            <i class="fa-solid fa-fw fa-circle-notch me-2"></i><!--me-2 ile sağına marjin verdim. fa-fw ile hizalama verdik. ms ile marjin start verilir. -->
+                            My Groups
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-primary list-group-item-action">
+                            <i class="fa-solid fa-fw fa-calendar-check me-2"></i><!--me-2 ile sağına marjin verdim. fa-fw ile hizalama verdik. ms ile marjin start verilir. -->
+                            My Events
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-primary list-group-item-action">
+                            <i class="fa-solid fa-fw fa-images me-2"></i><!--me-2 ile sağına marjin verdim. fa-fw ile hizalama verdik. ms ile marjin start verilir. -->
+                            My Photos
+                        </a>
+                    </div>
+                </div>
+            </div><!--Sütunlara yatayda 3 birim uzunluk verdik. -->
+            <div class="col-lg-7">SÜTUN 2</div><!--Sütunlara yatayda 7 birim uzunluk verdik. -->
+            <div class="col-lg-2">SÜTUN 3</div><!--Sütunlara yatayda 2 birim uzunluk verdik. -->
+        </div>
+
+    </main>
+
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
